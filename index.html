@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>āyatt — The Enterprise Agentic AI Platform</title>
+    <meta name="description" content="Coming soon." />
+    <meta property="og:title" content="āyatt — The Enterprise Agentic AI Platform" />
+    <meta property="og:description" content="Coming soon." />
+    <meta property="og:image" content="/og.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="āyatt — The Enterprise Agentic AI Platform" />
+    <meta name="twitter:description" content="Coming soon." />
+    <meta name="twitter:image" content="/og.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; margin: 0; }
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: #0a0a0a;
+        background: white;
+      }
+      .wrap {
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      /* Sky tint like the Next/Tailwind version */
+      .bg-sky-tint {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        background:
+          radial-gradient(40rem 40rem at 85% -10%, rgba(125, 211, 252, 0.35), transparent 60%),
+          radial-gradient(34rem 34rem at 10% 110%, rgba(186, 230, 253, 0.35), transparent 60%),
+          linear-gradient(to bottom, rgba(240, 249, 255, 0.7), rgba(255,255,255,0) 30%);
+        filter: saturate(1.05);
+      }
+      .container {
+        max-width: 64rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .wordmark {
+        display: inline-flex;
+        align-items: baseline;
+        gap: .25rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        margin-bottom: 1rem;
+      }
+      .wordmark .a {
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+        line-height: .9;
+      }
+      .wordmark .ai {
+        font-size: clamp(2.5rem, 6vw, 3.5rem);
+        line-height: .9;
+        color: #0ea5e9; /* sky-500 */
+      }
+      h1 {
+        font-size: clamp(1.375rem, 2.5vw, 1.875rem);
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        margin: 0;
+      }
+      .chip {
+        margin-top: 1.25rem;
+        display: inline-flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        border-radius: 9999px;
+        border: 1px solid #e5e7eb; /* zinc-200 */
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 1px 2px rgba(0,0,0,.06);
+        backdrop-filter: blur(6px);
+        color: #3f3f46; /* zinc-700 */
+        font-size: .875rem;
+      }
+      .cta {
+        margin-top: .75rem;
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .75rem 1.25rem;
+        border-radius: 9999px;
+        background: #0a0a0a;
+        color: white;
+        text-decoration: none;
+        font-size: .9rem;
+        font-weight: 500;
+        box-shadow: 0 0 0 0 rgba(14,165,233,0); /* for focus ring animation */
+        transition: background .2s ease, box-shadow .2s ease;
+      }
+      .cta:hover { background: #18181b; } /* zinc-800 */
+      .cta:focus-visible {
+        outline: none;
+        box-shadow:
+          0 0 0 2px rgba(14,165,233,.5), /* ring sky-300 */
+          0 0 0 4px rgba(255,255,255,1); /* ring offset */
+      }
+      footer {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 0; right: 0;
+        text-align: center;
+        color: #71717a; /* zinc-500 */
+        font-size: .75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bg-sky-tint" aria-hidden="true"></div>
+      <section class="container">
+        <div class="wordmark">
+          <span class="a">āyatt</span><span class="ai">.ai</span>
+        </div>
+        <h1>The Enterprise Agentic AI Platform</h1>
+        <div class="chip">Coming soon</div>
+        <a class="cta" href="mailto:hello@ayatt.ai">Contact us — hello@ayatt.ai</a>
+      </section>
+      <footer>© <span id="y"></span> Ayatt AI, Inc. All rights reserved.</footer>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
